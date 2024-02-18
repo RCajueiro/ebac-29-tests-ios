@@ -1,14 +1,20 @@
-import { $ } from '@wdio/globals'
+import { $, driver } from '@wdio/globals'
 
 class LoginPage {
     get email (){
         return $('id:email')
     }
     get password (){
-        return $('android=new UiSelector().text("Password")')
+        if(driver.isAndroid)
+            return $('android=new UiSelector().text("Password")')
+        if(driver.isIOS)
+            return $('-ios predicate string: name == "Password"')
     }
     get btnLogin(){
-        return $('~Login')
+        if(driver.isAndroid)
+            return $('~Login')
+        if(driver.isIOS)
+            return $('~btnLogin')
     }
 
     async login(email, password){

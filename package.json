@@ -3,19 +3,22 @@
   "type": "module",
   "devDependencies": {
     "@wdio/allure-reporter": "^8.24.12",
+    "@wdio/appium-service": "^9.18.4",
     "@wdio/cli": "^8.26.1",
-    "@wdio/local-runner": "^8.26.1",
-    "@wdio/mocha-framework": "^8.24.12",
-    "@wdio/spec-reporter": "^8.24.12",
+    "@wdio/local-runner": "^9.18.4",
+    "@wdio/mocha-framework": "^9.18.0",
+    "@wdio/sauce-service": "^9.18.4",
+    "@wdio/spec-reporter": "^9.18.0",
     "appium-uiautomator2-driver": "^2.34.2",
+    "appium-xcuitest-driver": "^9.10.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   },
   "scripts": {
-    "test": "wdio run ./config/wdio.conf.js",
-    "test:login": "wdio run ./config/wdio.conf.js --suite login",
-    "test:product": "wdio run ./config/wdio.conf.js --suite product",
-    "test:search": "wdio run ./config/wdio.conf.js --suite search"
+    "test": "npx wdio run ./wdio.conf.js",
+    "test:ios": "npx wdio run ./wdio.ios.conf.js --suite products",
+    "test:checkout": "npx wdio run ./wdio.ios.conf.js --suite checkout",
+    "report": "npx allure open allure-report"
   },
   "dependencies": {
     "allure-commandline": "^2.25.0",

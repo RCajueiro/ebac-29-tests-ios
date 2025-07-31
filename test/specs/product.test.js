@@ -6,9 +6,9 @@ import productPage from '../pageobjects/product.page.js'
 describe('Product Details', () => {
     it('should view product info', async () => {
         await homePage.search()
-        await browsePage.searchInput.setValue('In')
+        await browsePage.searchInput.setValue('Tênis Esportivo')
         await (await browsePage.products).at(0).click()
-        expect(productPage.getProductTitle('Ingrid Running Jacket')).toBeDisplayed()
+        expect(productPage.getProductTitle('Tênis Esportivo')).toBeDisplayed()
     })
 })
 

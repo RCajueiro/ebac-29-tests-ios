@@ -1,0 +1,230 @@
+[90m2025-07-30T06:10:58.485Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m BrowserStack service started with id: ef5f7f2b-ed0b-4b21-b904-72aa53c9ac9d
+[90m2025-07-30T06:10:58.496Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Sending SDK event with data {
+  userName: '[REDACTED]',
+  accessKey: '[REDACTED]',
+  event_type: 'SDKTestAttempted',
+  detectedFramework: 'WebdriverIO-mocha',
+  event_properties: {
+    sdkRunId: 'ef5f7f2b-ed0b-4b21-b904-72aa53c9ac9d',
+    testhub_uuid: undefined,
+    language_framework: 'WebdriverIO_mocha',
+    referrer: 'WebdriverIO-mocha/9.18.3',
+    language: 'WebdriverIO',
+    languageVersion: 'v22.12.0',
+    buildName: 'EBAC Teste',
+    buildIdentifier: 'undefined',
+    os: 'Windows_NT',
+    hostname: 'BES-Gabriel',
+    productMap: {
+      observability: true,
+      accessibility: null,
+      percy: false,
+      automate: true,
+      app_automate: false
+    },
+    product: [ 'observability', 'automate' ],
+    framework: 'mocha'
+  }
+}
+[90m2025-07-30T06:10:58.874Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Exception in sending funnel data: ResponseError: Error response from server 401:  {"message":"Unauthorized"}
+    at fetchWrap (file:///C:/Repositorio/Testes%20em%20iOS/ebac-store-mobile-tests/node_modules/@wdio/browserstack-service/build/index.js:259:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async fireFunnelRequest (file:///C:/Repositorio/Testes%20em%20iOS/ebac-store-mobile-tests/node_modules/@wdio/browserstack-service/build/index.js:3244:20)
+    at async fireFunnelTestEvent (file:///C:/Repositorio/Testes%20em%20iOS/ebac-store-mobile-tests/node_modules/@wdio/browserstack-service/build/index.js:3208:5)
+    at async sendStart (file:///C:/Repositorio/Testes%20em%20iOS/ebac-store-mobile-tests/node_modules/@wdio/browserstack-service/build/index.js:3216:3)
+    at async BrowserstackLauncherService.onPrepare (file:///C:/Repositorio/Testes%20em%20iOS/ebac-store-mobile-tests/node_modules/@wdio/browserstack-service/build/index.js:3715:5) {
+  response: Response {
+    status: 401,
+    statusText: 'Unauthorized',
+    headers: Headers {
+      date: 'Wed, 30 Jul 2025 06:10:58 GMT',
+      'content-type': 'application/json; charset=utf-8',
+      'transfer-encoding': 'chunked',
+      connection: 'keep-alive',
+      'cache-control': 'no-cache',
+      'set-cookie': 'tracking_id=3bcf79a4-038a-4d21-8c60-484d8bbfc1c8; domain=.browserstack.com; path=/; expires=Tue, 30 Jul 2030 06:10:58 GMT, __cf_bm=pBwxbLPPDH1h81u.qsw19_D9TJgspo_lmU1wWAVIvvc-1753855858-1.0.1.1-IvNjDAzj__UZ1_x5OFd.fcC5gQr_fQQAprEqSRIRqUKmpZlQ_C4ACQ0zMiJTZoVqfjaNk8_zgT0HEPs4P6CJ8BYRHs4ebxjR2xAafKbcAs4; path=/; expires=Wed, 30-Jul-25 06:40:58 GMT; domain=.browserstack.com; HttpOnly; Secure; SameSite=None, _cfuvid=F30hznZRpt6sS.8us.HuIyXn5yTpp0azTUFR7u3gdI4-1753855858568-0.0.1.1-604800000; path=/; domain=.browserstack.com; HttpOnly; Secure; SameSite=None',
+      status: '401 Unauthorized',
+      vary: 'Origin',
+      'x-frame-options': 'SAMEORIGIN',
+      'x-powered-by': 'Phusion Passenger',
+      'x-request-id': '839ba117-4b3d-4391-affa-4b34817d022c',
+      'x-runtime': '0.012817',
+      'x-ua-compatible': 'IE=Edge,chrome=1',
+      'cf-cache-status': 'DYNAMIC',
+      server: 'cloudflare',
+      'cf-ray': '9672b22b1c8aa460-GRU'
+    },
+    body: ReadableStream { locked: true, state: 'closed', supportsBYOB: true },
+    bodyUsed: true,
+    ok: false,
+    redirected: false,
+    type: 'basic',
+    url: 'https://api.browserstack.com/sdk/v1/event'
+  }
+}
+[90m2025-07-30T06:10:58.874Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m app is not defined in browserstack-service config, skipping ...
+[90m2025-07-30T06:10:58.874Z[39m [33mWARN[39m [97m@wdio/browserstack-service[39m Accessibility Automation will run only on Chrome browsers.
+[90m2025-07-30T06:10:58.875Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Sending launch start event
+[90m2025-07-30T06:10:59.433Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m [Start_Build] Success response: {"success":false,"options":null,"code":null,"errors":[{"message":"Access to BrowserStack denied due to incorrect credentials.","key":"ERROR_INVALID_CREDENTIALS"}],"error_trace_id":"7252084f-32bf-4b2b-925c-ea95f804fba4"}
+[90m2025-07-30T06:10:59.433Z[39m [31mERROR[39m [97m@wdio/browserstack-service[39m OBSERVABILITY Build creation failed null
+[90m2025-07-30T06:10:59.437Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m browserstackLocal is not enabled - skipping...
+[90m2025-07-30T06:11:03.889Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m teardown started
+[90m2025-07-30T06:11:03.889Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m teardown ended
+[90m2025-07-30T06:11:04.095Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Inside OnComplete hook..
+[90m2025-07-30T06:11:04.095Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Sending stop launch event
+[90m2025-07-30T06:11:04.095Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m [STOP_BUILD] Missing Authentication Token/ Build ID
+[90m2025-07-30T06:11:04.096Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m BrowserStack service run ended for id: ef5f7f2b-ed0b-4b21-b904-72aa53c9ac9d testhub id: undefined
+[90m2025-07-30T06:11:04.097Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Reading worker file worker-data-17716.json
+[90m2025-07-30T06:11:04.099Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Sending SDK event with data {
+  userName: '[REDACTED]',
+  accessKey: '[REDACTED]',
+  event_type: 'SDKTestSuccessful',
+  detectedFramework: 'WebdriverIO-mocha',
+  event_properties: {
+    sdkRunId: 'ef5f7f2b-ed0b-4b21-b904-72aa53c9ac9d',
+    testhub_uuid: undefined,
+    language_framework: 'WebdriverIO_mocha',
+    referrer: 'WebdriverIO-mocha/9.18.3',
+    language: 'WebdriverIO',
+    languageVersion: 'v22.12.0',
+    buildName: 'EBAC Teste',
+    buildIdentifier: 'undefined',
+    os: 'Windows_NT',
+    hostname: 'BES-Gabriel',
+    productMap: {
+      observability: true,
+      accessibility: null,
+      percy: false,
+      automate: true,
+      app_automate: false
+    },
+    product: [ 'observability', 'automate' ],
+    framework: 'mocha',
+    productUsage: {
+      testObservability: {
+        enabled: true,
+        manuallySet: false,
+        buildHashedId: undefined,
+        events: {
+          buildEvents: {
+            started: { isTriggered: true, status: 'success', error: undefined },
+            finished: {
+              isTriggered: true,
+              status: 'failed',
+              error: 'Token/buildID is undefined, build creation might have failed'
+            }
+          },
+          testEvents: {
+            started: { triggeredCount: 0, sentCount: 0, failedCount: 0 },
+            finished: { triggeredCount: 0, sentCount: 0, failedCount: 0 }
+          },
+          hookEvents: {
+            started: { triggeredCount: 0, sentCount: 0, failedCount: 0 },
+            finished: { triggeredCount: 0, sentCount: 0, failedCount: 0 }
+          },
+          logEvents: { triggeredCount: 0, sentCount: 0, failedCount: 0 },
+          cbtSessionEvents: { triggeredCount: 0, sentCount: 0, failedCount: 0 }
+        }
+      }
+    }
+  }
+}
+[90m2025-07-30T06:11:04.345Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Exception in sending funnel data: ResponseError: Error response from server 401:  {"message":"Unauthorized"}
+    at fetchWrap (file:///C:/Repositorio/Testes%20em%20iOS/ebac-store-mobile-tests/node_modules/@wdio/browserstack-service/build/index.js:259:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async fireFunnelRequest (file:///C:/Repositorio/Testes%20em%20iOS/ebac-store-mobile-tests/node_modules/@wdio/browserstack-service/build/index.js:3244:20)
+    at async fireFunnelTestEvent (file:///C:/Repositorio/Testes%20em%20iOS/ebac-store-mobile-tests/node_modules/@wdio/browserstack-service/build/index.js:3208:5)
+    at async sendFinish (file:///C:/Repositorio/Testes%20em%20iOS/ebac-store-mobile-tests/node_modules/@wdio/browserstack-service/build/index.js:3219:3)
+    at async BrowserstackLauncherService.onComplete (file:///C:/Repositorio/Testes%20em%20iOS/ebac-store-mobile-tests/node_modules/@wdio/browserstack-service/build/index.js:3879:5) {
+  response: Response {
+    status: 401,
+    statusText: 'Unauthorized',
+    headers: Headers {
+      date: 'Wed, 30 Jul 2025 06:11:04 GMT',
+      'content-type': 'application/json; charset=utf-8',
+      'transfer-encoding': 'chunked',
+      connection: 'keep-alive',
+      'cache-control': 'no-cache',
+      'set-cookie': 'tracking_id=d85d3df4-f240-4ac7-920a-1d71a4d47bc0; domain=.browserstack.com; path=/; expires=Tue, 30 Jul 2030 06:11:04 GMT, __cf_bm=EYWJPPJnIo82Yh846ePX4tWGWpk_towkcYlhpf3FVm4-1753855864-1.0.1.1-Nn7cjOTO958v3F_EejmMKfbpN0jZ89SJC1eFVawKx8Iiwiw1GvR1z_dBqkzcU.8wDLyC.bqV0K6PzmZR8C0PQMcYuVsLwElmhbLLDOYwEg0; path=/; expires=Wed, 30-Jul-25 06:41:04 GMT; domain=.browserstack.com; HttpOnly; Secure; SameSite=None, _cfuvid=9a398aEV4Jug1eDUMkGahdsmUofim7HqH16moyAvJak-1753855864078-0.0.1.1-604800000; path=/; domain=.browserstack.com; HttpOnly; Secure; SameSite=None',
+      status: '401 Unauthorized',
+      vary: 'Origin',
+      'x-frame-options': 'SAMEORIGIN',
+      'x-powered-by': 'Phusion Passenger',
+      'x-request-id': '1597a2e6-b137-43be-a80f-1b50281f1599',
+      'x-runtime': '0.011827',
+      'x-ua-compatible': 'IE=Edge,chrome=1',
+      'cf-cache-status': 'DYNAMIC',
+      server: 'cloudflare',
+      'cf-ray': '9672b24d8b75ff8c-GRU'
+    },
+    body: ReadableStream { locked: true, state: 'closed', supportsBYOB: true },
+    bodyUsed: true,
+    ok: false,
+    redirected: false,
+    type: 'basic',
+    url: 'https://api.browserstack.com/sdk/v1/event'
+  }
+}
+[90m2025-07-30T06:11:04.345Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m If facing any issues, please contact BrowserStack support with the Build Run Id - ef5f7f2b-ed0b-4b21-b904-72aa53c9ac9d
+[90m2025-07-30T06:11:05.056Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m Upload response: {
+  "status": "failed",
+  "message": "Invalid username or access-key. Visit https://www.browserstack.com/accounts/profile/details for more details."
+}
+[90m2025-07-30T06:11:05.056Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Response - {
+  status: 'failed',
+  message: 'Invalid username or access-key. Visit https://www.browserstack.com/accounts/profile/details for more details.'
+}
+2025-07-30T06:11:05.615Z DEBUG @wdio/browserstack-service Sending SDK event with data {
+  userName: '[REDACTED]',
+  accessKey: '[REDACTED]',
+  event_type: 'SDKTestSuccessful',
+  detectedFramework: 'WebdriverIO-mocha',
+  event_properties: {
+    sdkRunId: 'ef5f7f2b-ed0b-4b21-b904-72aa53c9ac9d',
+    language_framework: 'WebdriverIO_mocha',
+    referrer: 'WebdriverIO-mocha/9.18.3',
+    language: 'WebdriverIO',
+    languageVersion: 'v22.12.0',
+    buildName: 'EBAC Teste',
+    buildIdentifier: 'undefined',
+    os: 'Windows_NT',
+    hostname: 'BES-Gabriel',
+    productMap: {
+      observability: true,
+      accessibility: null,
+      percy: false,
+      automate: true,
+      app_automate: false
+    },
+    product: [ 'observability', 'automate' ],
+    framework: 'mocha',
+    productUsage: {
+      testObservability: {
+        enabled: true,
+        manuallySet: false,
+        events: {
+          buildEvents: {
+            started: { isTriggered: true, status: 'success' },
+            finished: {
+              isTriggered: true,
+              status: 'failed',
+              error: 'Token/buildID is undefined, build creation might have failed'
+            }
+          },
+          testEvents: {
+            started: { triggeredCount: 0, sentCount: 0, failedCount: 0 },
+            finished: { triggeredCount: 0, sentCount: 0, failedCount: 0 }
+          },
+          hookEvents: {
+            started: { triggeredCount: 0, sentCount: 0, failedCount: 0 },
+            finished: { triggeredCount: 0, sentCount: 0, failedCount: 0 }
+          },
+          logEvents: { triggeredCount: 0, sentCount: 0, failedCount: 0 },
+          cbtSessionEvents: { triggeredCount: 0, sentCount: 0, failedCount: 0 }
+        }
+      }
+    }
+  }
+}
+2025-07-30T06:11:05.906Z ERROR @wdio/browserstack-service Error in sending funnel data: Error: Error response from server 401:  {"message":"Unauthorized"}
+2025-07-30T06:11:06.727Z DEBUG @wdio/browserstack-service Successfully uploaded performance events Bravo

@@ -6,4 +6,4 @@ class ProfilePage {
     }
 }
 
-export default new ProfilePage();
+export default new ProfilePage()

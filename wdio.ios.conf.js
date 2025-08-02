@@ -2,8 +2,8 @@ import allure from '@wdio/allure-reporter'
 import 'dotenv/config'
 
 export const config = {
-    user: 'ramon.teste',
-    key: 'b4fea5fd-943e-423f-9fef-8664ba8cb188',
+    user: process.env.SAUCE_USERNAME,
+    key: process.env.SAUCE_ACCESS_KEY,
     hostname: 'ondemand.us-west-1.saucelabs.com',
     port: 443,
     path: '/wd/hub',

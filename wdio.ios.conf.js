@@ -46,7 +46,7 @@ export const config = {
             disableWebdriverScreenshotsReporting: true,
         }],
     ],
-    onComplete: function () {
+    /* onComplete: function () {
         const reportError = new Error('Could not generate Allure report')
         const generation = allure(['generate', 'allure-results', '--clean'])
         return new Promise((resolve, reject) => {
@@ -65,7 +65,7 @@ export const config = {
                 resolve()
             })
         })
-    },
+    }, */
     afterStep: function (test, scenario, { error, duration, passed }) {
         if(error) {
             driver.takeScreenshot()
